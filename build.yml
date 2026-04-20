@@ -13,7 +13,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: mvn clean package -DskipTests   # creates target/aws-integration-batch-job.jar
+        run: mvn clean package -DskipTests
+
+      - name: List target directory
+        run: ls -l target   # 👈 This will show you exactly what JAR Maven produced
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
