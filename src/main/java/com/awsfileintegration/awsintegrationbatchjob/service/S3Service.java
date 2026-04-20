@@ -23,7 +23,7 @@ public class S3Service {
                 .bucket(bucketName)
                 .key(keyName)
                 .build();
-
+        System.out.println("before uploading");
         s3Client.putObject(request, Paths.get(filePath));
         System.out.println("Uploaded: " + bucketName + "/" + keyName);
     }
