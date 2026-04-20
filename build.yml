@@ -16,7 +16,7 @@ jobs:
         run: mvn clean package -DskipTests
 
       - name: List target directory
-        run: ls -l target   # 👈 This will show you exactly what JAR Maven produced
+        run: ls -l target   
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
