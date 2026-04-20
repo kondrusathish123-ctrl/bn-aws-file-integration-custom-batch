@@ -59,6 +59,7 @@
     </dependencies>
 
     <build>
+        <finalName>aws-integration-batch-job</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
